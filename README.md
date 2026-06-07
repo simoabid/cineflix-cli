@@ -2,7 +2,7 @@
 <pre align="center">
  ██████ ██ ███   ██ █████ █████ ██    ██ ██  ██
 ██      ██ ████  ██ ██    ██    ██    ██  ████ 
-██      ██ ██ ██ ██ ████  ████  ██    ██   ██  
+██      ██ ██ ██ ██ ████  ████  ██    ██   ██   
 ██      ██ ██  ████ ██    ██    ██    ██  ████ 
  ██████ ██ ██   ███ █████ ██    █████ ██ ██  ██
 </pre>
@@ -29,8 +29,9 @@
   <a href="#steam-deck"><img src="https://img.shields.io/badge/Steam_Deck-171A21?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Deck" /></a>
 </p>
 
+
 <p align="center">
-  <a href="https://discord.gg/aqu7GpqVmR"><img src="https://invidget.switchblade.xyz/aqu7GpqVmR" alt="Discord Server" /></a>
+  <a href="https://discord.gg/"><img src="https://invidget.switchblade.xyz/" alt="Discord Server" /></a>
 </p>
 
 <h3 align="center">
