@@ -43,7 +43,7 @@ cineflix-cli — a cli to browse and watch anime, movies and TV shows (alone AND
 	Showcase
 </h1>
 
-[CINEFLIX-CLI](.assets/cineflix-cli.png)
+![CINEFLIX-CLI](.assets/cineflix-cli.png)
 
 ## Table of Contents
 
