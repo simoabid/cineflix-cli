@@ -1,8 +1,8 @@
-name: 'ani-cli checks'
+name: 'cineflix-cli checks'
 on:
   pull_request:
-    paths: 
-      - "/ani-cli"
+    paths:
+      - "/cineflix-cli"
       
 jobs:
   version-bump:

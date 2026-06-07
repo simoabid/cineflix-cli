@@ -1,0 +1,9 @@
+core/
+core/*
+
+# Ignore all .log files
+*.log
+# Ignore all .tmp files
+*.tmp
+# Ignore all .bak files
+*.bak

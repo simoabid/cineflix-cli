@@ -1,11 +1,11 @@
-name: 'ani-cli checks'
+name: 'cineflix-cli checks'
 on:
   push:
     branches:
       - master
   pull_request:
     paths:
-      - "**ani-cli"
+      - "**cineflix-cli"
 
 jobs:
   sh-checker:
@@ -19,7 +19,7 @@ jobs:
         SHELLCHECK_OPTS: -s sh -o all -e 2250
         SHFMT_OPTS: -i 4 -ci -d
       with:
-        sh_checker_exclude: "_ani-cli-bash _ani-cli-zsh"
+        sh_checker_exclude: "_cineflix-cli-bash _cineflix-cli-zsh"
       
   check-exec:
     name: Executable Bit
@@ -27,7 +27,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: test exec bit
-      run: test -x "./ani-cli"
+      run: test -x "./cineflix-cli"
 
   check-no-awk:
     name: No Awk Allowed
@@ -35,4 +35,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: verify that noone added awk
-      run: '! grep awk "./ani-cli"'
+      run: '! grep awk "./cineflix-cli"'

@@ -1,7 +1,7 @@
-# Hacking ani-cli
-Ani-cli is set up to scrape one platform - currently allanime. Supporting multiple sources at a time would require more changes than we (the maintainers) find worth doing, for this reason any feature request asking for a new site is rejected.
+# Hacking cineflix-cli
+Cineflix-cli is set up to scrape one platform - currently allanime. Supporting multiple sources at a time would require more changes than we (the maintainers) find worth doing, for this reason any feature request asking for a new site is rejected.
 
-However ani-cli being open-source and the pirate anime streaming sites being so similar you can hack ani-cli to support any site that follows a few conventions.
+However cineflix-cli being open-source and the pirate anime streaming sites being so similar you can hack cineflix-cli to support any site that follows a few conventions.
 
 ## Prerequisites
 Here's the of skills you'll need and the guide will take for granted:
@@ -9,12 +9,12 @@ Here's the of skills you'll need and the guide will take for granted:
 - understanding of http(s) requests and proficiency with curl
 - ability to read html and javascript on a basic level and search them
 - writing regexes
-You'll also need web browser with a debugger and environment that can run unmodified ani-cli
+You'll also need web browser with a debugger and environment that can run unmodified cineflix-cli
 
 ## The scraping process
-The following flowchart demonstrates how ani-cli operates from a scraping standpoint:
+The following flowchart demonstrates how cineflix-cli operates from a scraping standpoint:
 
-![image](.assets/ani-cli-scraping-flow.png)
+![image](.assets/cineflix-cli-scraping-flow.png)
 
 The steps to get to a link from a query is the following:
 1. search with the site's search page for the query
@@ -54,10 +54,10 @@ The `curl` in this function is responsible for the search request, and the follo
 The reason for this is the `nth` function, see it for more details.
 You'll have to change some variables in the process (eg. allanime_base) too.
 
-If you have done everything correctly, you can run `ani-cli`, query your site of choice and select from the responses.
-Then ani-cli should fail without a message.
+If you have done everything correctly, you can run `cineflix-cli`, query your site of choice and select from the responses.
+Then cineflix-cli should fail without a message.
 If it fails with `No results found!` you have debugging to do.
-Running ani-cli with `sh -x` is a good way to debug.
+Running cineflix-cli with `sh -x` is a good way to debug.
 
 ### Episode selection
 Having completed the previous step, the `id` and `title` will contain the selected title and the corresponding id.
@@ -70,7 +70,7 @@ You need to rewrite the web request and the following regexes to achieve a list 
 Again the `nth` function is used to offer a selection.
 
 If you have done everything correctly, now you can search for a title, get its episodes listed and select an episode.
-Then ani-cli should fail with `Episode not released!`
+Then cineflix-cli should fail with `Episode not released!`
 
 ### Getting the player embed
 After selecting an episode, the next step is to load its page and extract the embed(s).
@@ -99,12 +99,12 @@ The output of the `get_links` function needs to be concatenated into the `links`
 From here the `get_episode_url` function will continue with quality selection which you need not to alter.
 
 ## Other functionality
-Assuming you completed all the necessary modifications, ani-cli should completely work for you now.
+Assuming you completed all the necessary modifications, cineflix-cli should completely work for you now.
 The UI and the history system works as long as you keep the structure of the original code and the format of the responses.
 
-There might be cases that can't be covered by the current structure of ani-cli, but still it works for most sites as I've observed.
+There might be cases that can't be covered by the current structure of cineflix-cli, but still it works for most sites as I've observed.
 
 ## UX Spec
 
-There also exists a UX spec if you want to replicate the ani-cli user experience in a fresh codebase:
-![image](.assets/ani-cli-ux-spec.png)
+There also exists a UX spec if you want to replicate the cineflix-cli user experience in a fresh codebase:
+![image](.assets/cineflix-cli-ux-spec.png)
