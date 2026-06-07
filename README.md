@@ -2,7 +2,7 @@
 <pre align="center">
  ██████ ██ ███   ██ █████ █████ ██    ██ ██  ██
 ██      ██ ████  ██ ██    ██    ██    ██  ████ 
-██      ██ ██ ██ ██ ████  ████  ██    ██   ██   
+██      ██ ██ ██ ██ ████  ████  ██    ██   ██
 ██      ██ ██  ████ ██    ██    ██    ██  ████ 
  ██████ ██ ██   ███ █████ ██    █████ ██ ██  ██
 </pre>
@@ -42,7 +42,7 @@ cineflix-cli — a cli to browse and watch anime, movies and TV shows (alone AND
 	Showcase
 </h1>
 
-[cineflix-cli-demo.webm](https://user-images.githubusercontent.com/44473782/224679247-0856e652-f187-4865-bbcf-5a8e5cf830da.webm)
+[CINEFLIX-CLI](assets/cineflix-cli.png)
 
 ## Table of Contents
 
