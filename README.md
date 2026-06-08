@@ -45,6 +45,16 @@ cineflix-cli — a cli to browse and watch anime, movies and TV shows (alone AND
 
 ![CINEFLIX-CLI](.assets/cineflix-cli.png)
 
+
+<h1 align="center">
+	One-Liner Installer
+</h1>
+
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/simoabid/cineflix-cli/master/install.sh | bash
+`
+
 ## Table of Contents
 
 - [Fixing errors](#fixing-errors)
